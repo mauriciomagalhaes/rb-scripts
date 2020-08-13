@@ -5,6 +5,7 @@
 import routeros_api
 import json
 from lib import *
+import time
 
 conn = routeros_api.RouterOsApiPool(
     '10.4.1.1', 
@@ -27,8 +28,9 @@ while True:
     elif resposta == 2:
          lista.set(id=ident, disabled="false")
     elif resposta == 3:
-        print('Saindo do Sistema')
+        print('Saindo do Sistema ...')
+        time.sleep(3)
         break
     else:
-        print('\033[31mERRO! Digite uma opção válida!\033[m')
+        print('ERRO! Digite uma opção válida!')
 
