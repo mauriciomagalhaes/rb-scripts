@@ -7,9 +7,9 @@ import json
 from lib import *
 
 conn = routeros_api.RouterOsApiPool(
-    '10.4.1.1', 
-    username='admin', 
-    password='agora100sempre',
+    'IP', 
+    username='', 
+    password='',
     plaintext_login=True
     )
 
