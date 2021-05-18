@@ -7,7 +7,7 @@ import json
 from lib import *
 
 conn = routeros_api.RouterOsApiPool(
-    'IP', 
+    '10.4.1.1', 
     username='', 
     password='',
     plaintext_login=True
